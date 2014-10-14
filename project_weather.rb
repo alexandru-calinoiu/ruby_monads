@@ -15,3 +15,7 @@ address = Address.new(country)
 creator = Creator.new(address)
 project = Project.new(creator)
 p weather_for_project(project)
+
+# not passing
+evil_project = Project.new(Creator.new(Address.new(Country.new(nil))))
+p weather_for_project(evil_project)
