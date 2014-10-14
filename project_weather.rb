@@ -5,7 +5,11 @@ Country = Struct.new(:capital)
 City = Struct.new(:weather)
 
 def weather_for_project(project)
-	project.creator.address.country.capital.weather
+	creator = project.creator
+	address = creator.address
+	country = address.country
+	capital = country.capital
+	capital.weather
 end
 
 # passing
