@@ -13,4 +13,4 @@ LinkedListStack = Struct.new(:top, :pop) do
 end
 
 stack = LinkedListStack.empty
-p stack.push('hello').push('world').pop.top
+p stack.push('hello').push('world').pop.top	
